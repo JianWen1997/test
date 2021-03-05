@@ -1,6 +1,24 @@
 <template>
   <!-- 底部 -->
-  <div class="footer">
+  <footer class="footer">
+    <ul class="footer-top">
+      <li>
+        <div></div>
+        <span>品类齐全,轻松购物</span>
+      </li>
+      <li>
+        <div></div>
+        <span>多仓直发,极速配送</span>
+      </li>
+      <li>
+        <div></div>
+        <span>正品行货,精致服务</span>
+      </li>
+      <li>
+        <div></div>
+        <span>天天低价,畅选无忧</span>
+      </li>
+    </ul>
     <div class="footer-container">
       <div class="footerList">
         <div class="footerItem">
@@ -49,13 +67,13 @@
             <li>夺宝岛</li>
             <li>DIY装机</li>
             <li>延保服务</li>
-            <li>尚品汇E卡</li>
-            <li>尚品汇通信</li>
+            <li>京东E卡</li>
+            <li>京东通信</li>
           </ul>
         </div>
         <div class="footerItem">
           <h4>帮助中心</h4>
-          <img src="./images/wx_cz.jpg" />
+          
         </div>
       </div>
       <div class="copyright">
@@ -102,7 +120,15 @@
         <p>京ICP备19006430号</p>
       </div>
     </div>
-  </div>
+    <ul class="footer-bottom">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </footer>
 </template>
 <script>
 export default {
@@ -111,8 +137,47 @@ export default {
 </script>
 <style lang="less" rel="stylesheet/less"  scoped>
 .footer {
+  
   background-color: #eaeaea;
-
+  .footer-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    height:100px;
+    line-height:100px;
+    margin: 0 auto;
+    
+    li{
+      width:220px;
+      height:42px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      div{
+         width:36px;
+        height:40px;
+        background-image: url(./images/2.png);
+      }
+      &:nth-of-type(1) div{
+        background-position: -0px -192px;
+      }
+      &:nth-of-type(2) div{
+        background-position: -41px -192px;
+      }
+      &:nth-of-type(3) div{
+        background-position: -82px -192px;
+      }
+      &:nth-of-type(4) div{
+        background-position: -123px -192px;
+      }
+      span{
+        font-size: 18px;
+        color:#444;
+        font-weight: bold;
+      }
+    }
+  }
   .footer-container {
     width: 1200px;
     margin: 0 auto;
@@ -167,6 +232,38 @@ export default {
       p {
         margin: 10px 0;
         text-align: center;
+      }
+    }
+  }
+  .footer-bottom{
+    width:660px;
+    height:100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    li{
+      width:103px;
+      height:32px;
+      margin:0 3px;
+      background-image: url(./images/2.png);
+      &:nth-of-type(1){
+        background-position: -205px -111px;
+      }
+      &:nth-of-type(2){
+        background-position: -205px -74px;
+      }
+      &:nth-of-type(3){
+        background-position: -205px -37px;
+      }
+      &:nth-of-type(4){
+        background-position: -205px 0;
+      }
+      &:nth-of-type(5){
+        background-position: 0 -155px;
+      }
+      &:nth-of-type(6){
+        background-position: -205px -155px;
       }
     }
   }

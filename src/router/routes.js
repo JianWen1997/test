@@ -1,14 +1,23 @@
 //引入Home
-import Home from '../pages/Home/Home.vue'
+//import Home from '../pages/Home/Home.vue'
+const Home =()=>import ('../pages/Home/Home.vue')
 
 
 //引入Search
-import Search from '../pages/Search/Search.vue'
+//import Search from '../pages/Search/Search.vue'
+const Search =()=>import ('../pages/Search/Search.vue')
+
 //引入Detail
-import Detail from '../pages/Detail/Detail.vue'
+//import Detail from '../pages/Detail/Detail.vue'
+const Detail =()=>import ('../pages/Detail/Detail.vue')
+
 
 //引入ShopCart
-import ShopCart from '../pages/ShopCart/ShopCart.vue'
+//import ShopCart from '../pages/ShopCart/ShopCart.vue'
+const ShopCart =()=>import ('../pages/ShopCart/ShopCart.vue')
+const Login =()=>import ('../pages/Login')
+const Register =()=>import ('../pages/Register')
+ 
 
 export default [
   //Home路由
@@ -40,6 +49,31 @@ export default [
     path: '/shopcart',
     name: 'shopcart',
     component: ShopCart
+  },
+  {
+    path: '/login',
+    component: Login,
+    meta: {
+      isHideFooter: true //隐藏Footer组件
+    },
+    //路由独享守卫
+    // beforeenter:(to,from,next)=>{
+    //   //判断是不是已经登录过 如果已经登录过,直接跳转到首页
+    //   const userInfo = store.state.user.userInfo
+    //   if(userInfo.name){
+    //     next('/')
+    //   }else{
+    //     next()
+    //   }
+    // }
+  },
+  //Register路由
+  {
+    path: '/register',
+    component: Register,
+    meta: {
+      isHideFooter: true //隐藏Footer组件
+    }
   },
 
 
