@@ -17,7 +17,9 @@ const Detail =()=>import ('../pages/Detail/Detail.vue')
 const ShopCart =()=>import ('../pages/ShopCart/ShopCart.vue')
 const Login =()=>import ('../pages/Login')
 const Register =()=>import ('../pages/Register')
- 
+
+// 动态引入CartSuccess
+const CartSuccess =() => import ('../pages/CartSuccess/CartSuccess.vue')
 
 export default [
   //Home路由
@@ -39,7 +41,7 @@ export default [
   },
   //Detail路由
   {
-    path: '/detail/:skuId',
+    path: '/detail',
     name: 'detail',
     component: Detail,
   },
@@ -75,6 +77,13 @@ export default [
       isHideFooter: true //隐藏Footer组件
     }
   },
+    // cartSuccess
+    {
+      path:'/cartsuccess',
+      name:'cartsuccess',
+      component:CartSuccess
+    },
+  
 
 
   //路由的重定向
