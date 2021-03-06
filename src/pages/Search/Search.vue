@@ -915,8 +915,18 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
   name: "Search",
+  data() {
+    return {
+      advertisingList: []
+    }
+  },
+  async mounted() {
+    const re = await axios({url: 'http://localhost:3000'})
+    console.log(re)
+  }
 }
 </script>
 <style lang="stylus" scoped>
