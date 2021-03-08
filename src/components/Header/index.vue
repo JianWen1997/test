@@ -173,10 +173,7 @@ export default {
     })
    
   },
-  updated(){
-    console.log(1)
 
-  }
 
 };
 </script>

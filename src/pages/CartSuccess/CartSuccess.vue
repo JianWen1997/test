@@ -12,24 +12,24 @@
                         <div>
                             <img class="s-img" :src="detailInfo.imgUrl" alt="">
                         </div>
-                        <div class="s-right">
+                        <div class="s-right" @click="toDetail">
                             <div>
                                 <!-- <a href="javescript:;" class="shop-content">小米耳机 圈铁Pro 入耳式有线耳机音乐耳机手机耳机耳麦</a> -->
-                                <router-link class="shop-content" to="/detail">{{detailInfo.title}}</router-link>
+                                <a class="shop-content">{{detailInfo.title}}</a>
                             </div>
                             <div>
                                 <span class="txt">颜色：银黑</span>
-                                <span class="txt">尺码：3.5mm</span>
+                                <span class="txt">数量: {{detailInfo.num}}</span>
                                 <span class="txt">价钱:<span style="color:red;font-size:18px">{{detailInfo.price}}</span></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="success-right">
-                    <div class="r-top">
+                    <div class="r-top" @click="toDetail">
                         <!-- <a href="javascript:;" class="shopDetail">查看商品详情</a> -->
                         <!--  -->
-                        <router-link class="shopDetail" to="/detail">查看商品详情</router-link>
+                        <a class="shopDetail">查看商品详情</a>
                     </div>
                     <div class="r-button" @click="toCart">
                         <a href="javascript:;">去购物车结算</a>
@@ -44,145 +44,19 @@
                 <div>
                     <h3>购买了该商品的用户还购买了</h3>
                 </div>
-                <ul>
-                    <li class="shopList">
+                <ul v-if="cartList">
+                    <li class="shopList" v-for="(val) in cartList.buyShopList" :key="val.id">
                         <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/fba5d381d687303d.jpg" alt=""></a>
+                            <a href="javascript:;"><img :src="val.image" alt=""></a>
                             <div class="inner-bott">
                                 <div class="inner-text"> 
-                                    <a href="javascript:;" title="小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm">小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm</a>
+                                    <a href="javascript:;" :title="val.name">{{val.name}}</a>
                                 </div>
                                 <div class="inner-pre">
-                                    <strong>￥139.00</strong>
+                                    <strong>￥{{val.Price}}</strong>
                                 </div>
                                 <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/fba5d381d687303d.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm">小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥139.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/fba5d381d687303d.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm">小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥139.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/fba5d381d687303d.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm">小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥139.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/fba5d381d687303d.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm">小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥139.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/fba5d381d687303d.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm">小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥139.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/fba5d381d687303d.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm">小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥139.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/fba5d381d687303d.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm">小米（MI） 圈铁耳机2代 入耳式手机耳机 耳机有线 游戏耳机运动耳机耳麦有线吃鸡线控原装耳机  圈铁Pro  3.5mm</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥139.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
+                                    <a href="#">加入购物车</a>
                                 </div>
 
                             </div>
@@ -208,151 +82,26 @@
                 <div>
                     <h3>您可能还需要</h3>
                 </div>
-                <ul>
-                    <li class="shopList">
+                <ul v-if="cartList">
+                    <li class="shopList" v-for="(item) in cartList.linkShopList" :key="item.id">
                         <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/294d8218e0153a91.jpg" alt=""></a>
+                            <a href="javascript:;"><img :src="item.image" alt=""></a>
                             <div class="inner-bott">
                                 <div class="inner-text"> 
-                                    <a href="javascript:;" title="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装">蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装</a>
+                                    <a href="javascript:;" :title="item.name">{{item.name}}</a>
                                 </div>
                                 <div class="inner-pre">
-                                    <strong>￥90.00</strong>
+                                    <strong>￥{{item.Price}}</strong>
                                 </div>
                                 <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
+                                    <a href="#">加入购物车</a>
                                 </div>
-
                             </div>
                         </div>
                     </li>
 
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/294d8218e0153a91.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装">蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥90.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/294d8218e0153a91.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装">蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥90.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/294d8218e0153a91.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装">蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥90.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/294d8218e0153a91.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装">蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥90.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/294d8218e0153a91.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装">蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥90.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/294d8218e0153a91.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装">蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥90.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="shopList">
-                        <div class="innerItem">
-                            <a href="javascript:;"><img src="./images/294d8218e0153a91.jpg" alt=""></a>
-                            <div class="inner-bott">
-                                <div class="inner-text"> 
-                                    <a href="javascript:;" title="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装">蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装</a>
-                                </div>
-                                <div class="inner-pre">
-                                    <strong>￥90.00</strong>
-                                </div>
-                                <div class="inner-add">
-                                    <a href="javascrip:;">加入购物车</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
                 </ul>
+
             </div>
         </div>
     </div>
@@ -364,6 +113,7 @@ export default {
     name:'cartSuccess',
     data() {
         return {
+          cartList:{}
         }
     },
     computed:{
@@ -371,25 +121,31 @@ export default {
         detailInfo:(state)=>state.detail.detailInfo
       })
     },
-    mounted(){
+    async mounted(){
       /* const detail = sessionStorage.getItem('detail')
       this.detail = JSON.parse(detail) */
       const skuId = this.$route.params.id
       this.$store.dispatch('getDetailInfo',skuId)
-      
+       // 调用mock数据
+     const cartList = await this.$API.addCartList()
+     this.cartList = cartList
     },
     methods:{
+      //去详情页
+      toDetail(){
+        this.$router.push(`/detail/${this.detailInfo.id}`)
+      },
         // 去购物车结算
         toCart(){
           const data ={
-            num:1,
-            idChecked:0,
+            num:this.detailInfo.num,
+            idChecked:false,
             price:this.detailInfo.price,
             title:this.detailInfo.title,
             imgUrl:this.detailInfo.imgUrl,
             id:this.detailInfo.id
           }
-          console.log(data)
+          //console.log(data)
           this.$store.dispatch('addShop',data).then(()=>{
             this.$router.replace('/shopcart')
           })

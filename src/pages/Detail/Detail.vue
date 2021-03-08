@@ -265,9 +265,9 @@
         <div class="choose">
           <div class="cartWrap">
             <div class="controls">
-              <input autocomplete="off" class="itxt" value="1" />
-              <a href="javascript:" class="plus">+</a>
-              <a href="javascript:" class="mins">-</a>
+              <input autocomplete="off" class="itxt" :value="detailInfo.num" @change="changeNumber(detailInfo,$event.target.value-detailInfo.num)" @input="validInput"  />
+              <a href="javascript:;" class="plus" @click="changeNumber(detailInfo,1)">+</a>
+              <a href="javascript:;" class="mins" @click="changeNumber(detailInfo,-1)">-</a>
             </div>
             <div class="add" @click="toSuccessCart">
               <a href="javascript:">加入购物车</a>
@@ -640,6 +640,8 @@
   </div>
 </template>
 <script>
+//引入防抖函数
+import debounce from 'lodash/debounce'
 import Zoon from './Zoon/Zoon'
 import ImageList from './ImageList/imageList'
 import {mapState} from 'vuex'
@@ -656,11 +658,31 @@ export default {
     }
   },
   mounted(){
-    const skuId = this.$route.params.id
-    //console.log(skuId)
-    this.$store.dispatch('getDetailInfo',skuId)
+    this.getDetail()
+    
   },
   methods:{
+    //商品详情
+    getDetail(){
+       const skuId = this.$route.params.id
+    //console.log(skuId)
+    this.$store.dispatch('getDetailInfo',skuId)
+    },
+
+    changeNumber:debounce(function(item,number){
+      //console.log(item)
+      const newNumber = item.num + number
+      this.$API.reqChangeDetailShop(item.id,{num:newNumber}).then(()=>{
+        this.getDetail()
+      })
+    },300),
+    //文本框输入事件
+    validInput(event){
+      //获取文本框的数据
+      const value = event.target.value
+      //通过正则匹配在赋值给文本框
+      event.target.value = value.replace(/^0+|\D+0*/,'')
+    },
     //鼠标移入
     handleWj(){
       this.isShow = true
@@ -681,9 +703,11 @@ export default {
       sessionStorage.setItem('detail',JSON.stringify(data)) */
       const skuId = this.$route.params.id
       // this.$router.push(`/cartsuccess/${skuId}`)
+
       this.$router.push(`/cartsuccess/${skuId}`)
       
     }
+
   },
   computed:{
     ...mapState({

@@ -1,8 +1,16 @@
 <template>
     <div class="cartContiner">
-        <div class="cart">
+        <div class="kong" v-if="shopcartList.length===0">
+          <img src="./images/6666.png" alt="">
+          <div>
+            <span>购物车空空的哦~，去看看心仪的商品吧~</span>
+            <router-link to="/" style="color:blue;font-size:14px">去购物</router-link>
+
+          </div>
+        </div>
+        <div class="cart" v-else>
             <div class="cart-top">
-                <h4>全部商品 {{totalNumber}}</h4>
+                <h4>全部商品 {{shopcartList.length}}</h4>
                 <div>配送至：广东省深圳市宝安区</div>
             </div>
             
@@ -17,16 +25,11 @@
                 </div>
 
                 <div class="cartAll" v-for="(item) in shopcartList" :key="item.id">
-                    <div class="cart-inner"  >
-                        <input type="checkbox">
-                        <div>
-                            <a href="javascript:;">京东自营</a>
-                        </div>
-                    </div>
+                    
                     <div class="cart-body"> 
                       <ul class="cart-list">
                         <li class="cart-list-con1" >
-                            <input type="checkbox" >
+                            <input :checked="item.idChecked" type="checkbox" @click="changeChecked(item.id,item.idChecked)">
                         </li>
                         <li class="cart-list-con2">
                             <img :src="item.imgUrl">
@@ -39,11 +42,11 @@
                             <span class="price">￥{{item.price}}</span>
                         </li>
                         <li class="cart-list-con5">
-                            <a href="javascript:;" class="mins">-</a>
+                            <a href="javascript:;" class="mins" @click="changeNum(item,-1)">-</a>
 
-                            <input autocomplete="off" type="text" :value="item.num" minnum="1" class="itxt">
+                            <input autocomplete="off" type="text" :value="item.num" minnum="1" @change="changeNum(item,$event.target.value-item.num)" class="itxt" @input="validInput">
 
-                            <a href="javascript:;" class="mins">+</a>
+                            <a href="javascript:;" class="mins" @click="changeNum(item,1)">+</a>
                         </li>
                             <li class="cart-list-con6">
                             <span class="sum" style="color:red;font-size:20px;">￥{{item.price}}</span>
@@ -62,19 +65,19 @@
             <div class="cart-tool">
                 <div class="tool-left">
                     <div class="select-all">
-                        <input class="chooseAll" type="checkbox">
+                        <input v-model="allChecked" class="chooseAll" type="checkbox">
                         <span>全选</span>
                     </div>
                     <div class="option">
-                        <a href="javascript:;">删除选中的商品</a>
+                        <a href="#" @click="allDelete">删除选中的商品</a>
                         <a href="javascript:;">移入关注</a>
-                        <a href="javascript:;">清理购物车</a>
+                        <a href="#" @click="allClear">清空购物车</a>
                     </div>
                 </div>
                 
                 <div class="money-box">
                     <div class="chosed">已选择
-                        <span>3</span>件商品</div>
+                        <span>{{totalNumber}}</span>件商品</div>
                     <div class="sumprice">
                         <em>总价 ：</em>
                         <i class="summoney" style="font-size:22px">￥{{totalPrice}}</i>
@@ -85,89 +88,92 @@
                 </div>
             </div>
 
-            <!-- 猜你喜欢 -->
-            <div class="cart-footer">
-              <ul>
-                <li class="active"><a href="javascript:;">猜你喜欢</a></li>
-                <li><a href="javascript:;">随手购</a></li>
-              </ul>
+            
+        </div>
+        <!-- 猜你喜欢 -->
+        <div class="cart-footer">
+          <ul>
+            <li class="active"><a href="javascript:;">猜你喜欢</a></li>
+            <li><a href="javascript:;">随手购</a></li>
+          </ul>
 
-              <div class="cartList">
-                <div class="cartItem">
-                  <div class="shopSingle">
-                       <a href="javascript:;" title="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装"    class="cartFooterImg">
-                       <img src="./images/294d8218e0153a91.jpg" alt="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶    礼盒装">
-                     </a>
-   
-                     <a href="javascript:;" class="cartFooterText">蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼   盒装</a>
-                     <div class="cartFooterPre">
-                       <strong>￥90.00</strong>
-                     </div>
-                     <div class="addC">
-                       <a href="javascript:;">加入购物车</a>
-                     </div>
+          <div class="cartList">
+            <div class="cartItem">
+              <div class="shopSingle">
+                    <a href="javascript:;" title="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼盒装"    class="cartFooterImg">
+                    <img src="./images/294d8218e0153a91.jpg" alt="蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶    礼盒装">
+                  </a>
+
+                  <a href="javascript:;" class="cartFooterText">蒙牛 酸酸乳乳此汽质 乳酸菌气泡水原味风味饮料PET瓶330ml×15瓶 礼   盒装</a>
+                  <div class="cartFooterPre">
+                    <strong>￥90.00</strong>
                   </div>
-                  
-                </div>
-
-                <div class="cartItem">
-                  <div class="shopSingle">
-                       <a href="javascript:;" title="海岛大亨 夹心海苔休闲儿童零食好吃的小食品 40g*2罐"    class="cartFooterImg">
-                       <img src="./images/062fda8cf52448d0.jpg" alt="海岛大亨 夹心海苔休闲儿童零食好吃的小食品 40g*2罐">
-                     </a>
-   
-                     <a href="javascript:;" class="cartFooterText">海岛大亨 夹心海苔休闲儿童零食好吃的小食品 40g*2罐</a>
-                     <div class="cartFooterPre">
-                       <strong>￥150.00</strong>
-                     </div>
-                     <div class="addC">
-                       <a href="javascript:;">加入购物车</a>
-                     </div>
+                  <div class="addC">
+                    <a href="javascript:;">加入购物车</a>
                   </div>
-                  
-                </div>
-
-                <div class="cartItem">
-                  <div class="shopSingle">
-                       <a href="javascript:;" title="小米（MI） 圈铁耳机2代 入耳式手机耳机有线 游戏耳塞运动有线蓝牙运动跑步吃鸡线控原装耳机 圈铁Pro 3.5mm"    class="cartFooterImg">
-                       <img src="./images/fba5d381d687303d.jpg" alt="小米（MI） 圈铁耳机2代 入耳式手机耳机有线 游戏耳塞运动有线蓝牙运动跑步吃鸡线控原装耳机 圈铁Pro 3.5mm">
-                     </a>
-   
-                     <a href="javascript:;" class="cartFooterText">小米（MI） 圈铁耳机2代 入耳式手机耳机有线 游戏耳塞运动有线蓝牙运动跑步吃鸡线控原装耳机 圈铁Pro 3.5mm</a>
-                     <div class="cartFooterPre">
-                       <strong>￥188.00</strong>
-                     </div>
-                     <div class="addC">
-                       <a href="javascript:;">加入购物车</a>
-                     </div>
-                  </div>
-                  
-                </div>
-
-                <div class="cartItem">
-                  <div class="shopSingle">
-                       <a href="javascript:;" title="【周黑鸭_锁鲜】气调盒装卤豆干香干280g 武汉特产休闲零食小吃"    class="cartFooterImg">
-                       <img src="./images/b1c7acd17c526b7b.jpg" alt="【周黑鸭_锁鲜】气调盒装卤豆干香干280g 武汉特产休闲零食小吃">
-                     </a>
-   
-                     <a href="javascript:;" class="cartFooterText">【周黑鸭_锁鲜】气调盒装卤豆干香干280g 武汉特产休闲零食小吃</a>
-                     <div class="cartFooterPre">
-                       <strong>￥269.00</strong>
-                     </div>
-                     <div class="addC">
-                       <a href="javascript:;">加入购物车</a>
-                     </div>
-                  </div>
-                  
-                </div>
-
               </div>
-
+              
             </div>
+
+            <div class="cartItem">
+              <div class="shopSingle">
+                    <a href="javascript:;" title="海岛大亨 夹心海苔休闲儿童零食好吃的小食品 40g*2罐"    class="cartFooterImg">
+                    <img src="./images/062fda8cf52448d0.jpg" alt="海岛大亨 夹心海苔休闲儿童零食好吃的小食品 40g*2罐">
+                  </a>
+
+                  <a href="javascript:;" class="cartFooterText">海岛大亨 夹心海苔休闲儿童零食好吃的小食品 40g*2罐</a>
+                  <div class="cartFooterPre">
+                    <strong>￥150.00</strong>
+                  </div>
+                  <div class="addC">
+                    <a href="javascript:;">加入购物车</a>
+                  </div>
+              </div>
+              
+            </div>
+
+            <div class="cartItem">
+              <div class="shopSingle">
+                    <a href="javascript:;" title="小米（MI） 圈铁耳机2代 入耳式手机耳机有线 游戏耳塞运动有线蓝牙运动跑步吃鸡线控原装耳机 圈铁Pro 3.5mm"    class="cartFooterImg">
+                    <img src="./images/fba5d381d687303d.jpg" alt="小米（MI） 圈铁耳机2代 入耳式手机耳机有线 游戏耳塞运动有线蓝牙运动跑步吃鸡线控原装耳机 圈铁Pro 3.5mm">
+                  </a>
+
+                  <a href="javascript:;" class="cartFooterText">小米（MI） 圈铁耳机2代 入耳式手机耳机有线 游戏耳塞运动有线蓝牙运动跑步吃鸡线控原装耳机 圈铁Pro 3.5mm</a>
+                  <div class="cartFooterPre">
+                    <strong>￥188.00</strong>
+                  </div>
+                  <div class="addC">
+                    <a href="javascript:;">加入购物车</a>
+                  </div>
+              </div>
+              
+            </div>
+
+            <div class="cartItem">
+              <div class="shopSingle">
+                    <a href="javascript:;" title="【周黑鸭_锁鲜】气调盒装卤豆干香干280g 武汉特产休闲零食小吃"    class="cartFooterImg">
+                    <img src="./images/b1c7acd17c526b7b.jpg" alt="【周黑鸭_锁鲜】气调盒装卤豆干香干280g 武汉特产休闲零食小吃">
+                  </a>
+
+                  <a href="javascript:;" class="cartFooterText">【周黑鸭_锁鲜】气调盒装卤豆干香干280g 武汉特产休闲零食小吃</a>
+                  <div class="cartFooterPre">
+                    <strong>￥269.00</strong>
+                  </div>
+                  <div class="addC">
+                    <a href="javascript:;">加入购物车</a>
+                  </div>
+              </div>
+              
+            </div>
+
+          </div>
+
         </div>
     </div>
 </template>
 <script>
+//引入防抖函数
+import debounce from 'lodash/debounce'
 import {mapState,mapGetters} from 'vuex'
 export default {
   name: "ShopCart",
@@ -182,29 +188,115 @@ export default {
     ...mapState({
       shopcartList:(state) => state.shopcart.shopcartList
     }),
-    ...mapGetters(['totalNumber','totalPrice']),
+    ...mapGetters(['totalNumber','totalPrice','isAllChecked']),
+    allChecked:{
+      get(){
+        return this.isAllChecked
+      },
+      set(value){
+        //console.log(value)
+        this.$store.dispatch('allChange',value)
+      }
+    }
   },
 
   async mounted() {
     // mock购物车数据
-    this.$store.dispatch('getShopCart')
+    this.getShops()
     
   },
+  
 
   methods:{
-
-
-
-
-    // 数量操作
-    updateNum(){},
-
-    // 数量操作-Input框中的正则匹配
+    //清空购物车
+    allClear(){
+      this.$confirm('确定清空购物车吗?', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      })
+        .then(() => {
+          this.$store
+            .dispatch('deleteAllShop')
+            .then(()=>{
+              this.$message.success('删除成功')
+              this.getShops()
+            })
+            .catch((error)=>{
+              this.$message.error(error.message)
+            })
+        })
+        .catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          });          
+        });
+    },
+    getShops(){
+      this.$store.dispatch('getShopCart')
+    },
+    async changeChecked(id,isChecked){
+      
+     
+      await this.$API.reqChangeShop(id,{idChecked:!isChecked})
+      this.getShops()
+     
+    },
+    changeNum:debounce(function(item,number){
+      console.log(number)
+      const newNumber = item.num + number
+      this.$API.reqChangeShop(item.id,{num:newNumber}).then(()=>{
+        this.getShops()
+      })
+    },300),
+        //文本框输入事件
     validInput(event){
-      // 获取后赋值
+      //获取文本框的数据
       const value = event.target.value
+      //通过正则匹配在赋值给文本框
       event.target.value = value.replace(/^0+|\D+0*/,'')
     },
+
+
+    //删除选中的商品
+    allDelete(){
+      const boo = this.shopcartList.some(item=>{
+        return item.idChecked
+      })
+      if(boo){
+         this.$confirm('确定删除全部选中的商品吗?', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      })
+        .then(() => {
+          this.$store
+            .dispatch('deleteShop')
+            .then(()=>{
+              this.$message.success('删除成功')
+              this.getShops()
+            })
+            .catch((error)=>{
+              this.$message.error(error.message)
+            })
+        })
+        .catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          });          
+        });
+      }else{
+        this.$message.error('没有选中的商品')
+      }
+     
+        
+    },
+
+
+
+
 
     // 删除操作
     deleteItem(skuId){
@@ -234,11 +326,34 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .cartContiner{
     min-width: 1200px;
 }
-
+.kong{
+  width:1200px;
+  height:300px;
+  margin:20px auto;
+  
+  
+ 
+  font-weight:bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div{
+    width:300px;
+    font-size:14px;
+    height:25px;
+    line-height:25px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+ 
+}
 .cart {
   width: 1200px;
   margin: 0 auto;
@@ -483,7 +598,7 @@ export default {
 
 .cart-footer {
   width:1200px;
-  margin:30px 0;
+  margin:30px auto;
 }
 
 .cart-footer ul {
