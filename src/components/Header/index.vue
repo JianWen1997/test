@@ -159,8 +159,8 @@ export default {
       //console.log(phone,password)
       if(phone&&password){
       const userInfo = await this.$API.reqUser()
-      console.log(userInfo.data)
-      this.userInfo = userInfo.data
+      console.log(userInfo)
+      this.userInfo = userInfo
       
       }
     },

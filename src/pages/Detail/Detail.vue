@@ -658,7 +658,7 @@ export default {
   mounted(){
     const skuId = this.$route.params.id
     //console.log(skuId)
-    this.$store.dispatch('getDetailInfo',113)
+    this.$store.dispatch('getDetailInfo',skuId)
   },
   methods:{
     //鼠标移入
@@ -681,7 +681,7 @@ export default {
       sessionStorage.setItem('detail',JSON.stringify(data)) */
       const skuId = this.$route.params.id
       // this.$router.push(`/cartsuccess/${skuId}`)
-      this.$router.push(`/cartsuccess/${113}`)
+      this.$router.push(`/cartsuccess/${skuId}`)
       
     }
   },

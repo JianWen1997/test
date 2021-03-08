@@ -1,0 +1,960 @@
+{
+  "shopcart": [
+    {
+      "num": 1,
+      "idChecked": 0,
+      "price": 6499,
+      "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+      "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/135833/32/6588/108554/5f2e47e1E17b5c3b0/0ae4291a8c23b545.jpg",
+      "id": 123
+    }
+  ],
+  "banner": [
+    "https://img30.360buyimg.com/pop/s1180x940_jfs/t1/127815/24/76/80086/5eb35d98E07e3ec7b/d76dc4073b1fbdf2.jpg.webp",
+    "https://img13.360buyimg.com/pop/s1180x940_jfs/t1/170049/9/8788/85119/603f4211E4da6140e/3193a35a2a6f63fd.jpg.webp",
+    "https://img11.360buyimg.com/babel/s1180x940_jfs/t1/161913/8/8792/97057/603d9df0E9f3219cb/f47517542faa4994.jpg.webp",
+    "https://img11.360buyimg.com/pop/s1180x940_jfs/t1/167396/36/8960/97794/6040480aE9a6e53a5/e07493ac55b5a059.jpg.webp",
+    "https://img30.360buyimg.com/pop/s1180x940_jfs/t1/163513/13/8134/97484/6038b247E7532e7c8/664c2d432686c3e0.jpg.webp"
+  ],
+  "search": [
+    {
+      "name": "空调",
+      "data": [
+        {
+          "imgUrl": "//img13.360buyimg.com/n2/jfs/t1/160232/20/10193/74558/6041dc04Eb537ee47/d22899f5162e9e20.jpg",
+          "price": 5399,
+          "title": "美的（Midea) 新能效 智行II 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/N8MJA3",
+          "id": 111,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/166726/17/9583/81828/6041f8fcE599ce9c9/53099cf1b51f376c.jpg",
+          "price": 4899,
+          "title": "科龙(Kelon) 京品家电 新一级能效 郁金香 3匹 变频智能冷暖 立式柜机客厅制热取暖空调 KFR-72LW/VEA1(2N33)",
+          "id": 112,
+          "eva": "4万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/134904/8/16760/28466/5fb754a6E8b0b9f79/f6fe49624722f345.jpg",
+          "price": 3399,
+          "title": "大金 DAIKIN 大1.5匹 3级能效 变频 E-MAX5 M系列 壁挂式冷暖空调 白色 FTXM336VC",
+          "id": 113,
+          "eva": "97"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/157838/6/8790/171610/6039ff73Ea92c5c51/386a3200750d6fa2.jpg",
+          "price": 4099,
+          "title": "海尔（Haier）2匹/3匹自清洁变频空调柜机 家用冷暖立式空调 客厅圆柱立柜式空调 帝樽EDS系列 KFR-50LW/07EDS83/2匹",
+          "id": 114,
+          "eva": "6000+"
+        },
+        {
+          "imgUrl": "https://img11.360buyimg.com/n2/jfs/t1/168371/38/5372/60638/600fd461Eb704be77/26c1d3a190020bce.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 1122,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/165277/31/9413/75599/6041db32E8eb29391/c6793b7750d62193.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 1225,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/137357/40/7004/106119/5f361986E3715d07f/b3e884d3803bd036.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 126,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/165277/31/9413/75599/6041db32E8eb29391/c6793b7750d62193.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 124,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/135833/32/6588/108554/5f2e47e1E17b5c3b0/0ae4291a8c23b545.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 123,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/135247/28/6345/106538/5f2d1875E265b038e/de6adb92613e68ce.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 121,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/162591/20/10292/69662/603ef605E2638d022/0730375488db6835.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 119,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/154039/13/18909/120073/602e23b5E4eea4715/6f7f2081caabd9b3.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 120,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "//img13.360buyimg.com/n2/jfs/t1/160232/20/10193/74558/6041dc04Eb537ee47/d22899f5162e9e20.jpg",
+          "price": 5399,
+          "title": "美的（Midea) 新能效 智行II 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/N8MJA3",
+          "id": 111,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/166726/17/9583/81828/6041f8fcE599ce9c9/53099cf1b51f376c.jpg",
+          "price": 4899,
+          "title": "科龙(Kelon) 京品家电 新一级能效 郁金香 3匹 变频智能冷暖 立式柜机客厅制热取暖空调 KFR-72LW/VEA1(2N33)",
+          "id": 112,
+          "eva": "4万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/134904/8/16760/28466/5fb754a6E8b0b9f79/f6fe49624722f345.jpg",
+          "price": 3399,
+          "title": "大金 DAIKIN 大1.5匹 3级能效 变频 E-MAX5 M系列 壁挂式冷暖空调 白色 FTXM336VC",
+          "id": 113,
+          "eva": "97"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/157838/6/8790/171610/6039ff73Ea92c5c51/386a3200750d6fa2.jpg",
+          "price": 4099,
+          "title": "海尔（Haier）2匹/3匹自清洁变频空调柜机 家用冷暖立式空调 客厅圆柱立柜式空调 帝樽EDS系列 KFR-50LW/07EDS83/2匹",
+          "id": 114,
+          "eva": "6000+"
+        },
+        {
+          "imgUrl": "https://img11.360buyimg.com/n2/jfs/t1/168371/38/5372/60638/600fd461Eb704be77/26c1d3a190020bce.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 1122,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/165277/31/9413/75599/6041db32E8eb29391/c6793b7750d62193.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 1225,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/137357/40/7004/106119/5f361986E3715d07f/b3e884d3803bd036.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 126,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/165277/31/9413/75599/6041db32E8eb29391/c6793b7750d62193.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 124,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/135833/32/6588/108554/5f2e47e1E17b5c3b0/0ae4291a8c23b545.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 123,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/135247/28/6345/106538/5f2d1875E265b038e/de6adb92613e68ce.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 121,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/162591/20/10292/69662/603ef605E2638d022/0730375488db6835.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 119,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/154039/13/18909/120073/602e23b5E4eea4715/6f7f2081caabd9b3.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 120,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "//img13.360buyimg.com/n2/jfs/t1/160232/20/10193/74558/6041dc04Eb537ee47/d22899f5162e9e20.jpg",
+          "price": 5399,
+          "title": "美的（Midea) 新能效 智行II 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/N8MJA3",
+          "id": 111,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/166726/17/9583/81828/6041f8fcE599ce9c9/53099cf1b51f376c.jpg",
+          "price": 4899,
+          "title": "科龙(Kelon) 京品家电 新一级能效 郁金香 3匹 变频智能冷暖 立式柜机客厅制热取暖空调 KFR-72LW/VEA1(2N33)",
+          "id": 112,
+          "eva": "4万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/134904/8/16760/28466/5fb754a6E8b0b9f79/f6fe49624722f345.jpg",
+          "price": 3399,
+          "title": "大金 DAIKIN 大1.5匹 3级能效 变频 E-MAX5 M系列 壁挂式冷暖空调 白色 FTXM336VC",
+          "id": 113,
+          "eva": "97"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/157838/6/8790/171610/6039ff73Ea92c5c51/386a3200750d6fa2.jpg",
+          "price": 4099,
+          "title": "海尔（Haier）2匹/3匹自清洁变频空调柜机 家用冷暖立式空调 客厅圆柱立柜式空调 帝樽EDS系列 KFR-50LW/07EDS83/2匹",
+          "id": 114,
+          "eva": "6000+"
+        },
+        {
+          "imgUrl": "https://img11.360buyimg.com/n2/jfs/t1/168371/38/5372/60638/600fd461Eb704be77/26c1d3a190020bce.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 1122,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/165277/31/9413/75599/6041db32E8eb29391/c6793b7750d62193.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 1225,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/137357/40/7004/106119/5f361986E3715d07f/b3e884d3803bd036.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 126,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/165277/31/9413/75599/6041db32E8eb29391/c6793b7750d62193.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 124,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/135833/32/6588/108554/5f2e47e1E17b5c3b0/0ae4291a8c23b545.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 123,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/135247/28/6345/106538/5f2d1875E265b038e/de6adb92613e68ce.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 121,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/162591/20/10292/69662/603ef605E2638d022/0730375488db6835.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 119,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/154039/13/18909/120073/602e23b5E4eea4715/6f7f2081caabd9b3.jpg",
+          "price": 6499,
+          "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+          "id": 120,
+          "eva": "2万+"
+        }
+      ],
+      "attr": [
+        {
+          "title": "品牌",
+          "id": 761,
+          "attrList": [
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t1849/48/2195708324/3504/f65c0be6/56c28cc9N5415458b.jpg",
+              "tmName": "酷开（coocaa）",
+              "id": 2221111
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/53478/21/9148/4976/5d68e51dE84132ea9/4dc268e67891cceb.png",
+              "tmName": "创维（Skyworth）",
+              "id": 22223
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/1534/38/9873/3556/5bc93df2E73c40121/74dc92d16e483509.jpg",
+              "tmName": "三星（SAMSUNG）",
+              "id": 22334
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t1/132808/6/8420/2045/5f486e43E8ff5f3a1/62b97e5188766c42.png",
+              "tmName": "华为（HUAWEI）",
+              "id": 22228
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t1/39450/35/11890/1756/5d8b1ba9E5c839db8/735009863988f8b0.jpg",
+              "tmName": "康佳（KONKA）",
+              "id": 22277
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t1/116429/35/16248/2817/5f485fa4E326bdf8f/b7d19a346c4e45de.jpg",
+              "tmName": "小米（MI）",
+              "id": 22222
+            },
+            {
+              "imgUrl": "",
+              "tmName": "聚力众合（J）",
+              "id": 2222224
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t19360/352/2305554545/5388/7fed869c/5aefeb9bN1c82297b.jpg",
+              "tmName": "海信（Hisense）",
+              "id": 322221
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t1/175/26/11602/2671/5bce70a1Ecd95c076/4d7f4f80f80c5a1c.jpg",
+              "tmName": "索尼（SONY）",
+              "id": 222214
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/115581/36/16383/5762/5f485d44E0e17ef4b/abbba3781121c2ff.jpg",
+              "tmName": "海尔（Haier）",
+              "id": 22225
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/63000/25/8406/2925/5d662e3dEcc56c740/a83f0c21f8055aa0.jpg",
+              "tmName": "TCL",
+              "id": 21334
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t17380/273/1313127713/1697/2349a521/5ac43b77N3610f12d.jpg",
+              "tmName": "长虹（CHANGHONG）",
+              "id": 22229
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/5932/28/11176/6002/5bce822bE4be57b0c/162d6a5b24eb2ab7.jpg",
+              "tmName": "飞利浦（PHILIPS ）",
+              "id": 222226
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t2458/315/2153417538/12751/2ff4e617/56b15fe9Naae1551d.jpg",
+              "tmName": "夏普",
+              "id": 2222334
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/139060/38/19638/2825/5fe0477aE64df77e0/55af9759d5e9d78a.jpg",
+              "tmName": "荣耀（HONOR）",
+              "id": 221134
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/28728/20/11312/6662/5c8f5b37Eafb5c6d9/3fe0776c7ce64195.jpg",
+              "tmName": "VIDAA",
+              "id": 221332
+            }
+          ]
+        },
+        {
+          "title": "大 家 电",
+          "id": 777,
+          "attrList": [
+            "空调",
+            "移动空调",
+            "中央空调",
+            "冰箱",
+            "特殊商品",
+            "洗衣机"
+          ]
+        },
+        {
+          "title": "生活电器",
+          "id": 766,
+          "attrList": [
+            "冷风扇",
+            "取暖器",
+            "加湿器",
+            "电风扇",
+            "蒸汽/电动拖把",
+            "潮流生活电器",
+            "空气净化器"
+          ]
+        },
+        {
+          "title": "产品匹数",
+          "id": 767,
+          "attrList": [
+            "1匹",
+            "小1匹",
+            "大1匹",
+            "1.5匹",
+            "小1.5匹",
+            "2匹",
+            "2匹及以上",
+            "2.5匹",
+            "3匹",
+            "4匹",
+            "5匹"
+          ]
+        },
+        {
+          "title": "产品类型",
+          "id": 768,
+          "attrList": [
+            "壁挂式",
+            "立柜式"
+          ]
+        },
+        {
+          "title": "高级选项",
+          "id": 769,
+          "attrList": [
+            "能效等级",
+            "变频/定频",
+            "冷暖类型",
+            "产品特色",
+            "产品渠道",
+            "免排水",
+            "用户优选",
+            "风口位置",
+            "风管形式",
+            "操控方式",
+            "其他分类"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "电视",
+      "data": [
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/149977/32/14313/139629/5fae3127E4e350984/7c7d0b20d9ad0ed6.jpg",
+          "price": 849,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1111,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/149977/32/14313/139629/5fae3127E4e350984/7c7d0b20d9ad0ed6.jpg",
+          "price": 849,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1121,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/127185/3/11731/111120/5f5063bfEf739adf4/8520bf457c2d3202.jpg",
+          "price": 8299,
+          "title": "索尼（SONY）KD-65X9500H 65英寸 4K超高清 HDR 液晶平板",
+          "id": 1131,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/152035/7/3503/50131/5f946116E7add7c0a/ada91c2ba5c4011c.jpg",
+          "price": 8299,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1132,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/164520/8/8345/78583/6038bed5Eec8b49a5/314b85af6d693e48.jpg",
+          "price": 55999,
+          "title": "索尼（SONY）KD-65X9500H 65英寸 4K超高清 HDR 液晶平板",
+          "id": 1142,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/164520/8/8345/78583/6038bed5Eec8b49a5/314b85af6d693e48.jpg",
+          "price": 9999999,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1152,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/149235/37/11787/182072/5f946032E24a604d9/3a0f80173059a005.jpg",
+          "price": 566666,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 1166,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/161273/40/9707/136391/6041fd71Ebcfdd333/beca1f87ea1934fc.jpg",
+          "price": 5533,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 1266,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/143078/13/16095/141267/5fc0a02cE20292a88/1c47dbccf1f97e41.jpg",
+          "price": 4466,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 2661,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/155896/19/7532/108145/600e79b8Efa99e871/42bebac009ec46d0.jpg",
+          "price": 4466,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 2661,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/149977/32/14313/139629/5fae3127E4e350984/7c7d0b20d9ad0ed6.jpg",
+          "price": 849,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1111,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/149977/32/14313/139629/5fae3127E4e350984/7c7d0b20d9ad0ed6.jpg",
+          "price": 849,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1121,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/127185/3/11731/111120/5f5063bfEf739adf4/8520bf457c2d3202.jpg",
+          "price": 8299,
+          "title": "索尼（SONY）KD-65X9500H 65英寸 4K超高清 HDR 液晶平板",
+          "id": 1131,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/152035/7/3503/50131/5f946116E7add7c0a/ada91c2ba5c4011c.jpg",
+          "price": 8299,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1132,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/164520/8/8345/78583/6038bed5Eec8b49a5/314b85af6d693e48.jpg",
+          "price": 55999,
+          "title": "索尼（SONY）KD-65X9500H 65英寸 4K超高清 HDR 液晶平板",
+          "id": 1142,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/164520/8/8345/78583/6038bed5Eec8b49a5/314b85af6d693e48.jpg",
+          "price": 9999999,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1152,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/149235/37/11787/182072/5f946032E24a604d9/3a0f80173059a005.jpg",
+          "price": 566666,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 1166,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/161273/40/9707/136391/6041fd71Ebcfdd333/beca1f87ea1934fc.jpg",
+          "price": 5533,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 1266,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/143078/13/16095/141267/5fc0a02cE20292a88/1c47dbccf1f97e41.jpg",
+          "price": 4466,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 2661,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/155896/19/7532/108145/600e79b8Efa99e871/42bebac009ec46d0.jpg",
+          "price": 4466,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 2661,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/149977/32/14313/139629/5fae3127E4e350984/7c7d0b20d9ad0ed6.jpg",
+          "price": 849,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1111,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/149977/32/14313/139629/5fae3127E4e350984/7c7d0b20d9ad0ed6.jpg",
+          "price": 849,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1121,
+          "eva": "2万+"
+        },
+        {
+          "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/127185/3/11731/111120/5f5063bfEf739adf4/8520bf457c2d3202.jpg",
+          "price": 8299,
+          "title": "索尼（SONY）KD-65X9500H 65英寸 4K超高清 HDR 液晶平板",
+          "id": 1131,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/152035/7/3503/50131/5f946116E7add7c0a/ada91c2ba5c4011c.jpg",
+          "price": 8299,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1132,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/164520/8/8345/78583/6038bed5Eec8b49a5/314b85af6d693e48.jpg",
+          "price": 55999,
+          "title": "索尼（SONY）KD-65X9500H 65英寸 4K超高清 HDR 液晶平板",
+          "id": 1142,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/164520/8/8345/78583/6038bed5Eec8b49a5/314b85af6d693e48.jpg",
+          "price": 9999999,
+          "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+          "id": 1152,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/149235/37/11787/182072/5f946032E24a604d9/3a0f80173059a005.jpg",
+          "price": 566666,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 1166,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/161273/40/9707/136391/6041fd71Ebcfdd333/beca1f87ea1934fc.jpg",
+          "price": 5533,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 1266,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/143078/13/16095/141267/5fc0a02cE20292a88/1c47dbccf1f97e41.jpg",
+          "price": 4466,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 2661,
+          "eva": "1万+"
+        },
+        {
+          "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/155896/19/7532/108145/600e79b8Efa99e871/42bebac009ec46d0.jpg",
+          "price": 4466,
+          "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+          "id": 2661,
+          "eva": "1万+"
+        }
+      ],
+      "attr": [
+        {
+          "title": "品牌",
+          "id": 666,
+          "attrList": [
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t1/116429/35/16248/2817/5f485fa4E326bdf8f/b7d19a346c4e45de.jpg",
+              "tmName": "小米（MI）",
+              "id": 11111
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/53478/21/9148/4976/5d68e51dE84132ea9/4dc268e67891cceb.png",
+              "tmName": "创维（Skyworth）",
+              "id": 11112
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t19360/352/2305554545/5388/7fed869c/5aefeb9bN1c82297b.jpg",
+              "tmName": "海信（Hisense）",
+              "id": 11113
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/63000/25/8406/2925/5d662e3dEcc56c740/a83f0c21f8055aa0.jpg",
+              "tmName": "TCL",
+              "id": 11114
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t1/175/26/11602/2671/5bce70a1Ecd95c076/4d7f4f80f80c5a1c.jpg",
+              "tmName": "索尼（SONY）",
+              "id": 11115
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/115581/36/16383/5762/5f485d44E0e17ef4b/abbba3781121c2ff.jpg",
+              "tmName": "海尔（Haier）",
+              "id": 11116
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t1/39450/35/11890/1756/5d8b1ba9E5c839db8/735009863988f8b0.jpg",
+              "tmName": "康佳（KONKA）",
+              "id": 11117
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/1534/38/9873/3556/5bc93df2E73c40121/74dc92d16e483509.jpg",
+              "tmName": "三星（SAMSUNG）",
+              "id": 11118
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t1/132808/6/8420/2045/5f486e43E8ff5f3a1/62b97e5188766c42.png",
+              "tmName": "华为（HUAWEI）",
+              "id": 11119
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t17380/273/1313127713/1697/2349a521/5ac43b77N3610f12d.jpg",
+              "tmName": "长虹（CHANGHONG）",
+              "id": 11120
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t1849/48/2195708324/3504/f65c0be6/56c28cc9N5415458b.jpg",
+              "tmName": "酷开（coocaa）",
+              "id": 11121
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/5932/28/11176/6002/5bce822bE4be57b0c/162d6a5b24eb2ab7.jpg",
+              "tmName": "飞利浦（PHILIPS ）",
+              "id": 11122
+            },
+            {
+              "imgUrl": "//img30.360buyimg.com/popshop/jfs/t2458/315/2153417538/12751/2ff4e617/56b15fe9Naae1551d.jpg",
+              "tmName": "夏普",
+              "id": 11123
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/139060/38/19638/2825/5fe0477aE64df77e0/55af9759d5e9d78a.jpg",
+              "tmName": "荣耀（HONOR）",
+              "id": 11124
+            },
+            {
+              "imgUrl": "",
+              "tmName": "聚力众合（J）",
+              "id": 11125
+            },
+            {
+              "imgUrl": "//img20.360buyimg.com/popshop/jfs/t1/28728/20/11312/6662/5c8f5b37Eafb5c6d9/3fe0776c7ce64195.jpg",
+              "tmName": "VIDAA",
+              "id": 11126
+            }
+          ]
+        },
+        {
+          "title": "分类",
+          "id": 667,
+          "attrList": [
+            "平板电视",
+            "二手平板电视",
+            "投影机",
+            "音箱/音响"
+          ]
+        },
+        {
+          "title": "屏幕尺寸",
+          "id": 668,
+          "attrList": [
+            "32英寸及以下",
+            "39-45英寸",
+            "48-50英寸",
+            "55英寸",
+            "58-60英寸",
+            "65英寸",
+            "70-75英寸",
+            "78英寸及以上"
+          ]
+        },
+        {
+          "title": "分辨率",
+          "id": 669,
+          "attrList": [
+            "4k超高清（3840×2160）",
+            "8K超高清（7680×4320）",
+            "1024×600高清（1366×768）",
+            "全高清（1920×1080）其他"
+          ]
+        },
+        {
+          "title": "电视类型",
+          "id": 679,
+          "attrList": [
+            "4K超清",
+            "曲面",
+            "人工智能",
+            "大屏",
+            "全面屏",
+            "超薄",
+            "OLED",
+            "商业显示",
+            "智慧屏",
+            "量子点",
+            "教育电视"
+          ]
+        },
+        {
+          "title": "高级选项",
+          "id": 670,
+          "attrList": [
+            "观看距离",
+            "能效等级",
+            "CPU核心数",
+            "产品渠道",
+            "品牌类型",
+            "连接方式",
+            "用户优选",
+            "其他分类"
+          ]
+        }
+      ]
+    }
+  ],
+  "detail": [
+    {
+      "imgUrl": "//img13.360buyimg.com/n2/jfs/t1/160232/20/10193/74558/6041dc04Eb537ee47/d22899f5162e9e20.jpg",
+      "price": 5399,
+      "title": "美的（Midea) 新能效 智行II 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/N8MJA3",
+      "id": 111,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/166726/17/9583/81828/6041f8fcE599ce9c9/53099cf1b51f376c.jpg",
+      "price": 4899,
+      "title": "科龙(Kelon) 京品家电 新一级能效 郁金香 3匹 变频智能冷暖 立式柜机客厅制热取暖空调 KFR-72LW/VEA1(2N33)",
+      "id": 112,
+      "eva": "4万+"
+    },
+    {
+      "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/134904/8/16760/28466/5fb754a6E8b0b9f79/f6fe49624722f345.jpg",
+      "price": 3399,
+      "title": "大金 DAIKIN 大1.5匹 3级能效 变频 E-MAX5 M系列 壁挂式冷暖空调 白色 FTXM336VC",
+      "id": 113,
+      "eva": "97"
+    },
+    {
+      "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/157838/6/8790/171610/6039ff73Ea92c5c51/386a3200750d6fa2.jpg",
+      "price": 4099,
+      "title": "海尔（Haier）2匹/3匹自清洁变频空调柜机 家用冷暖立式空调 客厅圆柱立柜式空调 帝樽EDS系列 KFR-50LW/07EDS83/2匹",
+      "id": 114,
+      "eva": "6000+"
+    },
+    {
+      "imgUrl": "https://img11.360buyimg.com/n2/jfs/t1/168371/38/5372/60638/600fd461Eb704be77/26c1d3a190020bce.jpg",
+      "price": 6499,
+      "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+      "id": 1122,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/165277/31/9413/75599/6041db32E8eb29391/c6793b7750d62193.jpg",
+      "price": 6499,
+      "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+      "id": 1225,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/137357/40/7004/106119/5f361986E3715d07f/b3e884d3803bd036.jpg",
+      "price": 6499,
+      "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+      "id": 126,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/165277/31/9413/75599/6041db32E8eb29391/c6793b7750d62193.jpg",
+      "price": 6499,
+      "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+      "id": 124,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/135833/32/6588/108554/5f2e47e1E17b5c3b0/0ae4291a8c23b545.jpg",
+      "price": 6499,
+      "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+      "id": 123,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/135247/28/6345/106538/5f2d1875E265b038e/de6adb92613e68ce.jpg",
+      "price": 6499,
+      "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+      "id": 121,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/162591/20/10292/69662/603ef605E2638d022/0730375488db6835.jpg",
+      "price": 6499,
+      "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+      "id": 119,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/154039/13/18909/120073/602e23b5E4eea4715/6f7f2081caabd9b3.jpg",
+      "price": 6499,
+      "title": "美的（Midea) 新一级 智行 智能家电 变频冷暖 3匹客厅圆柱空调立式柜机KFR-72LW/BP3DN8Y-YH200（1)",
+      "id": 120,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/149977/32/14313/139629/5fae3127E4e350984/7c7d0b20d9ad0ed6.jpg",
+      "price": 849,
+      "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+      "id": 1111,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/149977/32/14313/139629/5fae3127E4e350984/7c7d0b20d9ad0ed6.jpg",
+      "price": 849,
+      "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+      "id": 1121,
+      "eva": "2万+"
+    },
+    {
+      "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/127185/3/11731/111120/5f5063bfEf739adf4/8520bf457c2d3202.jpg",
+      "price": 8299,
+      "title": "索尼（SONY）KD-65X9500H 65英寸 4K超高清 HDR 液晶平板",
+      "id": 1131,
+      "eva": "1万+"
+    },
+    {
+      "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/152035/7/3503/50131/5f946116E7add7c0a/ada91c2ba5c4011c.jpg",
+      "price": 8299,
+      "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+      "id": 1132,
+      "eva": "1万+"
+    },
+    {
+      "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/164520/8/8345/78583/6038bed5Eec8b49a5/314b85af6d693e48.jpg",
+      "price": 55999,
+      "title": "索尼（SONY）KD-65X9500H 65英寸 4K超高清 HDR 液晶平板",
+      "id": 1142,
+      "eva": "1万+"
+    },
+    {
+      "imgUrl": "https://img12.360buyimg.com/n2/jfs/t1/164520/8/8345/78583/6038bed5Eec8b49a5/314b85af6d693e48.jpg",
+      "price": 9999999,
+      "title": "康佳（KONKA）LED32S2 32英寸 智能网络电视 高配智慧AI 高清 平板液晶卧室教育电视",
+      "id": 1152,
+      "eva": "1万+"
+    },
+    {
+      "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/149235/37/11787/182072/5f946032E24a604d9/3a0f80173059a005.jpg",
+      "price": 566666,
+      "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+      "id": 1166,
+      "eva": "1万+"
+    },
+    {
+      "imgUrl": "https://img14.360buyimg.com/n2/jfs/t1/161273/40/9707/136391/6041fd71Ebcfdd333/beca1f87ea1934fc.jpg",
+      "price": 5533,
+      "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+      "id": 1266,
+      "eva": "1万+"
+    },
+    {
+      "imgUrl": "https://img10.360buyimg.com/n2/jfs/t1/143078/13/16095/141267/5fc0a02cE20292a88/1c47dbccf1f97e41.jpg",
+      "price": 4466,
+      "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+      "id": 2661,
+      "eva": "1万+"
+    },
+    {
+      "imgUrl": "https://img13.360buyimg.com/n2/jfs/t1/155896/19/7532/108145/600e79b8Efa99e871/42bebac009ec46d0.jpg",
+      "price": 4466,
+      "title": "创维（SKYWORTH）75A20 75英寸 4K超高清 智慧屏 防蓝光 远场语音 MEMC防抖 无边全面屏 3+32G内存  视频通话",
+      "id": 2661,
+      "eva": "1万+"
+    }
+  ],
+  "user": {
+    "name": "叫老大"
+  }
+}

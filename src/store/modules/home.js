@@ -1,14 +1,15 @@
 
 import {reqBanner} from '../../api'
 const state = {
-  bannerList:[]
+  bannerList:[],
+  userInfo:{}
   
 }
 const mutations = {
   RECEIVE_BANNERS(state,bannerList){
     state.bannerList = bannerList
-},
-  
+  },
+
 }
 const actions = {
   //轮播图信息
@@ -17,6 +18,7 @@ const actions = {
     //console.log(result)
     commit('RECEIVE_BANNERS',result)  
   },
+
 
 }
 const getters = {

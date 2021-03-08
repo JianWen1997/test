@@ -9,6 +9,7 @@
   </div>
 </template>
 <script>
+import throttle from 'lodash/throttle'
 export default {
   name: "Zoon",
   props: {
@@ -22,7 +23,7 @@ export default {
   },
   methods: {
     // 鼠标移动事件
-    handlerMove(event) {
+    handlerMove:throttle(function(event) {
       // 鼠标移动时的横纵坐标
       const { offsetX, offsetY } = event
       // 遮挡层的对象
@@ -43,7 +44,8 @@ export default {
       // 移动大图
       bigImg.style.left = -left * 2 + 'px'
       bigImg.style.top = -top * 2 + 'px'
-    },
+    },200)
+  
   },
 };
 </script>

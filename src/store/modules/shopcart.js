@@ -24,17 +24,19 @@ const actions = {
     dispatch('getShopCart')
     
   },
-  async addShop({commit,dispatch},data){
+  addShop({commit,dispatch},data){
+    dispatch('getShopCart').then(async ()=>{
+      const flag = state.shopcartList.some(item=>{
+        return item.id == data.id
+      })  
+      console.log(flag)
+      if(!flag){
+        await reqAddCartItem(data)
+      }                                           
+      dispatch('getShopCart')
+    })
     
-    const flag = state.shopcartList.some(item=>{
-      
-      return item.id === data.id
-    })  
-    console.log(flag)
-    if(!flag){
-      await reqAddCartItem(data)
-    }                                           
-    dispatch('getShopCart')
+    
   }
 
 }

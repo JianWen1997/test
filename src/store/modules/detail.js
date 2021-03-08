@@ -14,9 +14,6 @@ const actions = {
   async getDetailInfo({commit},id){
     const result = await reqDetail(id)
     //console.log(result)
-
-
-
     commit('RECEIVE_DETAIL',result)
   }
 

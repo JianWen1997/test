@@ -6,7 +6,7 @@ export const reqCategoryList = () =>ajaxMock.get('/category')
 
 
 
-export const reqUser = ()=>ajaxMock.get('/user')
+export const reqUser = ()=>ajax.get('/user')
 
 //购物车页面
 export const reqShopCart = ()=>ajax.get(`/shopcart`)

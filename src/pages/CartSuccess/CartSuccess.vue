@@ -389,6 +389,7 @@ export default {
             imgUrl:this.detailInfo.imgUrl,
             id:this.detailInfo.id
           }
+          console.log(data)
           this.$store.dispatch('addShop',data).then(()=>{
             this.$router.replace('/shopcart')
           })

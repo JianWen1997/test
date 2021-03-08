@@ -12,88 +12,13 @@
       <div class="attrContainer">
         <div class="attrItem">
           <div class="attrTitle">
-            <strong>品牌:</strong>
+            <strong>{{attr1.title}}:</strong>
           </div>
           <div class="attrValue">
             <ul class="trademarkContainer">
-              <li class="trademarkImg">
+              <li class="trademarkImg" v-for="item in attr1.attrList" :key="item.id">
                 <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
-                </a>
-              </li>
-              <li class="trademarkImg">
-                <a href="javascript:;">
-                  <img src="//img30.360buyimg.com/popshop/jfs/t1/110891/16/16407/5735/5f485eb2E8bf3d1c3/8b18518e6043f1ac.jpg" alt="">
+                  <img :src="item.imgUrl" alt="" :title="item.tmName">
                 </a>
               </li>
             </ul>
@@ -111,38 +36,13 @@
         </div>
         <div class="attrItem">
           <div class="attrTitle">
-            <strong>大 家 电:</strong>
+            <strong>{{attr2.title}}:</strong>
           </div>
           <div class="attrValue">
             <ul class="categoryContainer">
-              <li class="categoryList">
+              <li class="categoryList" v-for="(item, index) in attr2.attrList" :key="index">
                 <a href="javascript:;">
-                  移动空调
-                </a>
-              </li>
-              <li class="categoryList">
-                <a href="javascript:;">
-                  中央空调
-                </a>
-              </li>
-              <li class="categoryList">
-                <a href="javascript:;">
-                  特殊商品
-                </a>
-              </li>
-              <li class="categoryList">
-                <a href="javascript:;">
-                  冰箱
-                </a>
-              </li>
-              <li class="categoryList">
-                <a href="javascript:;">
-                  洗衣机
-                </a>
-              </li>
-              <li class="categoryList">
-                <a href="javascript:;">
-                  空调外机
+                  {{item}}
                 </a>
               </li>
             </ul>
@@ -160,38 +60,13 @@
         </div>
         <div class="attrItem">
           <div class="attrTitle">
-            <strong>生活电器:</strong>
+            <strong>{{attr3.title}}:</strong>
           </div>
           <div class="attrValue">
             <ul class="categoryContainer">
-              <li class="categoryList">
+              <li class="categoryList" v-for="(item, index) in attr3.attrList" :key="index">
                 <a href="javascript:;">
-                  冷风扇
-                </a>
-              </li>
-              <li class="categoryList">
-                <a href="javascript:;">
-                  取暖器
-                </a>
-              </li>
-              <li class="categoryList">
-                <a href="javascript:;">
-                  加湿器
-                </a>
-              </li>
-              <li class="categoryList">
-                <a href="javascript:;">
-                  蒸汽/电动拖把
-                </a>
-              </li>
-              <li class="categoryList">
-                <a href="javascript:;">
-                  空气净化器
-                </a>
-              </li>
-              <li class="categoryList">
-                <a href="javascript:;">
-                  潮流生活电器
+                  {{item}}
                 </a>
               </li>
             </ul>
@@ -209,63 +84,13 @@
         </div>
         <div class="attrItem">
           <div class="attrTitle">
-            <strong>产品匹数:</strong>
+            <strong>{{attr4.title}}:</strong>
           </div>
           <div class="attrValue">
             <ul class="lineContainer">
-              <li class="lineList">
+              <li class="lineList"  v-for="(item, index) in attr4.attrList" :key="index">
                 <a href="javascript:;">
-                  1匹
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  小1匹
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  大1匹
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  1.5匹
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  小1.5匹
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  2匹
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  2匹及以上
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  2.5匹
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  3匹
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  4匹
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  5匹
+                  {{item}}
                 </a>
               </li>
             </ul>
@@ -283,38 +108,13 @@
         </div>
         <div class="attrItem">
           <div class="attrTitle">
-            <strong>能效等级:</strong>
+            <strong>{{attr5.title}}:</strong>
           </div>
           <div class="attrValue">
             <ul class="lineContainer">
-              <li class="lineList">
+              <li class="lineList" v-for="(item, index) in attr5.attrList" :key="index">
                 <a href="javascript:;">
-                  一级能效
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  三级能效
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  新一级能效
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  二级能效
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  五级能效
-                </a>
-              </li>
-              <li class="lineList">
-                <a href="javascript:;">
-                  四级能效
+                  {{item}}
                 </a>
               </li>
             </ul>
@@ -332,52 +132,12 @@
         </div>
         <div class="attrItem gjOption">
           <div class="attrTitle">
-            <strong>高级选项:</strong>
+            <strong>{{attr6.title}}:</strong>
           </div>
           <div class="attrValue">
             <div class="optionList">
-              <a href="javascript:;" class="options">
-                产品类型
-                <i></i>
-              </a>
-              <a href="javascript:;" class="options">
-                变频/定频
-                <i></i>
-              </a>
-              <a href="javascript:;" class="options">
-                冷暖类型
-                <i></i>
-              </a>
-              <a href="javascript:;" class="options">
-                产品特色
-                <i></i>
-              </a>
-              <a href="javascript:;" class="options">
-                产品渠道
-                <i></i>
-              </a>
-              <a href="javascript:;" class="options">
-                免排水
-                <i></i>
-              </a>
-              <a href="javascript:;" class="options">
-                用户优选
-                <i></i>
-              </a>
-              <a href="javascript:;" class="options">
-                风管形式
-                <i></i>
-              </a>
-              <a href="javascript:;" class="options">
-                风口位置
-                <i></i>
-              </a>
-              <a href="javascript:;" class="options">
-                操控方式
-                <i></i>
-              </a>
-              <a href="javascript:;" class="options">
-                其他分类
+              <a href="javascript:;" class="options" v-for="(item, index) in attr6.attrList" :key="index">
+                {{item}}
                 <i></i>
               </a>
             </div>
@@ -391,115 +151,15 @@
             <h3>商品精选</h3>
             <span></span>
           </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
+          <div class="advertising" v-for="(item, index) in advertising" :key="index">
+            <img :src="item.imgUrl" alt="" @click="goDetail(item.id)">
             <p class="price">
-              <span>￥1299.00</span>
+              <span>￥{{item.price}}</span>
             </p>
             <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
+              <em @click="goDetail(item.id)">{{item.title}}</em>
             </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
-          </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
-            <p class="price">
-              <span>￥1299.00</span>
-            </p>
-            <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
-            </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
-          </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
-            <p class="price">
-              <span>￥1299.00</span>
-            </p>
-            <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
-            </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
-          </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
-            <p class="price">
-              <span>￥1299.00</span>
-            </p>
-            <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
-            </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
-          </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
-            <p class="price">
-              <span>￥1299.00</span>
-            </p>
-            <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
-            </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
-          </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
-            <p class="price">
-              <span>￥1299.00</span>
-            </p>
-            <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
-            </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
-          </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
-            <p class="price">
-              <span>￥1299.00</span>
-            </p>
-            <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
-            </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
-          </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
-            <p class="price">
-              <span>￥1299.00</span>
-            </p>
-            <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
-            </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
-          </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
-            <p class="price">
-              <span>￥1299.00</span>
-            </p>
-            <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
-            </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
-          </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
-            <p class="price">
-              <span>￥1299.00</span>
-            </p>
-            <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
-            </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
-          </div>
-          <div class="advertising">
-            <img src="https://img14.360buyimg.com/n2/jfs/t1/138651/9/19244/78818/5fe0a71bE5fa90c6c/d7de0a9e4510ada4.jpg" alt="">
-            <p class="price">
-              <span>￥1299.00</span>
-            </p>
-            <p class="desc">
-              <em>澳柯玛（AUCMA)空调挂机定速 自动清洗 独立除湿 家用静音壁挂式空调 大一匹单冷【5-15㎡提供JD安装】 线上专供</em>
-            </p>
-            <p class="comm">已有<em>8000+</em>人评价</p>
+            <p class="comm">已有<em>{{item.eva}}</em>人评价</p>
           </div>
         </div>
         <div class="right">
@@ -531,7 +191,7 @@
                 </a>
               </div>
               <div class="pages">
-                <span class="allComm">共<em>89万+</em> 件商品</span>
+                <span class="allComm">共<em>90万+</em> 件商品</span>
                 <span class="limt"><em style="color: red;font-weight: bold;">1</em> / 100</span>
                 <div class="arrowLeft">&lt;</div>
                 <div class="arrowRight">&gt;</div>
@@ -608,287 +268,17 @@
           </div>
           <div class="goodsList">
             <ul class="wrap">
-              <li @click="toDetail">
+              <li v-for="(item,index) in productList" :key="index">
                 <div class="goodsWrap">
                   <div class="img">
-                    <img src="https://img13.360buyimg.com/n7/jfs/t1/164308/23/8831/77956/603f2bafE6d98b0d5/a3d85fc32c0bc8fa.jpg" alt="">
+                    <img :src="item.imgUrl" alt="" @click="goDetail(item.id)">
                   </div>
                   <div class="price">
                     <em>￥</em>
-                    <span>9999.00</span>
+                    <span>{{item.price}}</span>
                   </div>
-                  <div class="title"><em>美的（Midea) 新能效 智弧 智能家电 变频冷暖 高温蒸汽自洁 1.5匹壁挂式空调KFR-35GW/N8MJA3</em></div>
-                  <div class="commit"><em>10万+</em>条评价</div>
-                  <div class="shop">
-                    <span>美的京东自营官方旗舰店</span>
-                  </div>
-                  <div class="addCart">
-                    <a href="javascript:;">
-                      <i class="con"></i>
-                      对比
-                    </a>
-                    <a href="javascript:;">
-                      <i class="guanzhu"></i>
-                      关注
-                    </a>
-                    <a href="javascript:;" class="shopCar">
-                      <i ></i>
-                      <em>加入购物车</em>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="goodsWrap">
-                  <div class="img">
-                    <img src="https://img13.360buyimg.com/n7/jfs/t1/164308/23/8831/77956/603f2bafE6d98b0d5/a3d85fc32c0bc8fa.jpg" alt="">
-                  </div>
-                  <div class="price">
-                    <em>￥</em>
-                    <span>9999.00</span>
-                  </div>
-                  <div class="title"><em>美的（Midea) 新能效 智弧 智能家电 变频冷暖 高温蒸汽自洁 1.5匹壁挂式空调KFR-35GW/N8MJA3</em></div>
-                  <div class="commit"><em>10万+</em>条评价</div>
-                  <div class="shop">
-                    <span>美的京东自营官方旗舰店</span>
-                  </div>
-                  <div class="addCart">
-                    <a href="javascript:;">
-                      <i class="con"></i>
-                      对比
-                    </a>
-                    <a href="javascript:;">
-                      <i class="guanzhu"></i>
-                      关注
-                    </a>
-                    <a href="javascript:;" class="shopCar">
-                      <i ></i>
-                      <em>加入购物车</em>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="goodsWrap">
-                  <div class="img">
-                    <img src="https://img13.360buyimg.com/n7/jfs/t1/164308/23/8831/77956/603f2bafE6d98b0d5/a3d85fc32c0bc8fa.jpg" alt="">
-                  </div>
-                  <div class="price">
-                    <em>￥</em>
-                    <span>9999.00</span>
-                  </div>
-                  <div class="title"><em>美的（Midea) 新能效 智弧 智能家电 变频冷暖 高温蒸汽自洁 1.5匹壁挂式空调KFR-35GW/N8MJA3</em></div>
-                  <div class="commit"><em>10万+</em>条评价</div>
-                  <div class="shop">
-                    <span>美的京东自营官方旗舰店</span>
-                  </div>
-                  <div class="addCart">
-                    <a href="javascript:;">
-                      <i class="con"></i>
-                      对比
-                    </a>
-                    <a href="javascript:;">
-                      <i class="guanzhu"></i>
-                      关注
-                    </a>
-                    <a href="javascript:;" class="shopCar">
-                      <i ></i>
-                      <em>加入购物车</em>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="goodsWrap">
-                  <div class="img">
-                    <img src="https://img13.360buyimg.com/n7/jfs/t1/164308/23/8831/77956/603f2bafE6d98b0d5/a3d85fc32c0bc8fa.jpg" alt="">
-                  </div>
-                  <div class="price">
-                    <em>￥</em>
-                    <span>9999.00</span>
-                  </div>
-                  <div class="title"><em>美的（Midea) 新能效 智弧 智能家电 变频冷暖 高温蒸汽自洁 1.5匹壁挂式空调KFR-35GW/N8MJA3</em></div>
-                  <div class="commit"><em>10万+</em>条评价</div>
-                  <div class="shop">
-                    <span>美的京东自营官方旗舰店</span>
-                  </div>
-                  <div class="addCart">
-                    <a href="javascript:;">
-                      <i class="con"></i>
-                      对比
-                    </a>
-                    <a href="javascript:;">
-                      <i class="guanzhu"></i>
-                      关注
-                    </a>
-                    <a href="javascript:;" class="shopCar">
-                      <i ></i>
-                      <em>加入购物车</em>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="goodsWrap">
-                  <div class="img">
-                    <img src="https://img13.360buyimg.com/n7/jfs/t1/164308/23/8831/77956/603f2bafE6d98b0d5/a3d85fc32c0bc8fa.jpg" alt="">
-                  </div>
-                  <div class="price">
-                    <em>￥</em>
-                    <span>9999.00</span>
-                  </div>
-                  <div class="title"><em>美的（Midea) 新能效 智弧 智能家电 变频冷暖 高温蒸汽自洁 1.5匹壁挂式空调KFR-35GW/N8MJA3</em></div>
-                  <div class="commit"><em>10万+</em>条评价</div>
-                  <div class="shop">
-                    <span>美的京东自营官方旗舰店</span>
-                  </div>
-                  <div class="addCart">
-                    <a href="javascript:;">
-                      <i class="con"></i>
-                      对比
-                    </a>
-                    <a href="javascript:;">
-                      <i class="guanzhu"></i>
-                      关注
-                    </a>
-                    <a href="javascript:;" class="shopCar">
-                      <i ></i>
-                      <em>加入购物车</em>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="goodsWrap">
-                  <div class="img">
-                    <img src="https://img13.360buyimg.com/n7/jfs/t1/164308/23/8831/77956/603f2bafE6d98b0d5/a3d85fc32c0bc8fa.jpg" alt="">
-                  </div>
-                  <div class="price">
-                    <em>￥</em>
-                    <span>9999.00</span>
-                  </div>
-                  <div class="title"><em>美的（Midea) 新能效 智弧 智能家电 变频冷暖 高温蒸汽自洁 1.5匹壁挂式空调KFR-35GW/N8MJA3</em></div>
-                  <div class="commit"><em>10万+</em>条评价</div>
-                  <div class="shop">
-                    <span>美的京东自营官方旗舰店</span>
-                  </div>
-                  <div class="addCart">
-                    <a href="javascript:;">
-                      <i class="con"></i>
-                      对比
-                    </a>
-                    <a href="javascript:;">
-                      <i class="guanzhu"></i>
-                      关注
-                    </a>
-                    <a href="javascript:;" class="shopCar">
-                      <i ></i>
-                      <em>加入购物车</em>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="goodsWrap">
-                  <div class="img">
-                    <img src="https://img13.360buyimg.com/n7/jfs/t1/164308/23/8831/77956/603f2bafE6d98b0d5/a3d85fc32c0bc8fa.jpg" alt="">
-                  </div>
-                  <div class="price">
-                    <em>￥</em>
-                    <span>9999.00</span>
-                  </div>
-                  <div class="title"><em>美的（Midea) 新能效 智弧 智能家电 变频冷暖 高温蒸汽自洁 1.5匹壁挂式空调KFR-35GW/N8MJA3</em></div>
-                  <div class="commit"><em>10万+</em>条评价</div>
-                  <div class="shop">
-                    <span>美的京东自营官方旗舰店</span>
-                  </div>
-                  <div class="addCart">
-                    <a href="javascript:;">
-                      <i class="con"></i>
-                      对比
-                    </a>
-                    <a href="javascript:;">
-                      <i class="guanzhu"></i>
-                      关注
-                    </a>
-                    <a href="javascript:;" class="shopCar">
-                      <i ></i>
-                      <em>加入购物车</em>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="goodsWrap">
-                  <div class="img">
-                    <img src="https://img13.360buyimg.com/n7/jfs/t1/164308/23/8831/77956/603f2bafE6d98b0d5/a3d85fc32c0bc8fa.jpg" alt="">
-                  </div>
-                  <div class="price">
-                    <em>￥</em>
-                    <span>9999.00</span>
-                  </div>
-                  <div class="title"><em>美的（Midea) 新能效 智弧 智能家电 变频冷暖 高温蒸汽自洁 1.5匹壁挂式空调KFR-35GW/N8MJA3</em></div>
-                  <div class="commit"><em>10万+</em>条评价</div>
-                  <div class="shop">
-                    <span>美的京东自营官方旗舰店</span>
-                  </div>
-                  <div class="addCart">
-                    <a href="javascript:;">
-                      <i class="con"></i>
-                      对比
-                    </a>
-                    <a href="javascript:;">
-                      <i class="guanzhu"></i>
-                      关注
-                    </a>
-                    <a href="javascript:;" class="shopCar">
-                      <i ></i>
-                      <em>加入购物车</em>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="goodsWrap">
-                  <div class="img">
-                    <img src="https://img13.360buyimg.com/n7/jfs/t1/164308/23/8831/77956/603f2bafE6d98b0d5/a3d85fc32c0bc8fa.jpg" alt="">
-                  </div>
-                  <div class="price">
-                    <em>￥</em>
-                    <span>9999.00</span>
-                  </div>
-                  <div class="title"><em>美的（Midea) 新能效 智弧 智能家电 变频冷暖 高温蒸汽自洁 1.5匹壁挂式空调KFR-35GW/N8MJA3</em></div>
-                  <div class="commit"><em>10万+</em>条评价</div>
-                  <div class="shop">
-                    <span>美的京东自营官方旗舰店</span>
-                  </div>
-                  <div class="addCart">
-                    <a href="javascript:;">
-                      <i class="con"></i>
-                      对比
-                    </a>
-                    <a href="javascript:;">
-                      <i class="guanzhu"></i>
-                      关注
-                    </a>
-                    <a href="javascript:;" class="shopCar">
-                      <i ></i>
-                      <em>加入购物车</em>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="goodsWrap">
-                  <div class="img">
-                    <img src="https://img13.360buyimg.com/n7/jfs/t1/164308/23/8831/77956/603f2bafE6d98b0d5/a3d85fc32c0bc8fa.jpg" alt="">
-                  </div>
-                  <div class="price">
-                    <em>￥</em>
-                    <span>9999.00</span>
-                  </div>
-                  <div class="title"><em>美的（Midea) 新能效 智弧 智能家电 变频冷暖 高温蒸汽自洁 1.5匹壁挂式空调KFR-35GW/N8MJA3</em></div>
-                  <div class="commit"><em>10万+</em>条评价</div>
+                  <div class="title"><em @click="goDetail(item.id)">{{item.title}}</em></div>
+                  <div class="commit"><em>{{item.eva}}</em>条评价</div>
                   <div class="shop">
                     <span>美的京东自营官方旗舰店</span>
                   </div>
@@ -915,14 +305,32 @@
     </div>
 </template>
 <script>
-
+import {mapState} from 'vuex'
 export default {
   name: "Search",
-
-
+  data() {
+    return {
+    }
+  },
+  computed: {
+    ...mapState({
+      attr1: state => state.search.attr1,
+      attr2: state => state.search.attr2,
+      attr3: state => state.search.attr3,
+      attr4: state => state.search.attr4,
+      attr5: state => state.search.attr5,
+      attr6: state => state.search.attr6,
+      productList: state => state.search.productList,
+      advertising: state => state.search.advertising
+    })
+  },
+  mounted() {
+    const {name} = this.$route.query
+    this.$store.dispatch('getSearchData', name)
+  },
   methods:{
-    toDetail(){
-      this.$router.push('/detail/1')
+    goDetail(id) {
+      this.$router.push(`/detail/${id}`)
     }
   }
 }
@@ -1078,6 +486,7 @@ export default {
           img
             width 160px
             height 160px
+            cursor pointer
           .price
             color #e3393c
             font-size 14px
@@ -1090,6 +499,7 @@ export default {
             overflow hidden
             padding 0 10px
             color #666
+            cursor pointer
           .comm
             padding 10px
             color #666
@@ -1120,8 +530,11 @@ export default {
                   border-color #e4393c
                   position relative
                 &.active
+                  border-color #e4393c
                   background #e4393c
-                  color white
+                  color white !important
+                  .arrow
+                    background-position 0 -120px
                 .arrow
                   display inline-block
                   width 7px
@@ -1237,6 +650,7 @@ export default {
                 img
                   width 220px
                   height 220px
+                  cursor pointer
               .price
                 margin-bottom 8px
                 color #e4393c
@@ -1251,6 +665,7 @@ export default {
                 color #666
                 em
                   line-height 20px
+                  cursor pointer
               .commit
                 margin-bottom 8px
                 color #666
