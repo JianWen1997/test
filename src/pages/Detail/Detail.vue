@@ -157,16 +157,16 @@
       <!-- 左侧放大镜区域 -->
       <div class="previewWrap">
         <!-- 放大镜效果 -->
-        <Zoon class="zoom"/>
+        <Zoon class="zoom" :detailInfo="detailInfo"/>
         <!-- 小图列表 -->
-        <ImageList />
+        <ImageList :detailInfo="detailInfo" />
       </div>
       <!-- 右侧选择区域 -->
       <div class="InfoWrap">
         <div class="goodsDetail">
           <h3 class="InfoName">
             <img src="./images/4.png" alt="京东电脑">
-            武极剑星 i7 10700F/GTX1660Ti-6G/2060S游戏台式吃鸡电脑主机/DIY组装机
+            {{detailInfo.title}}
           </h3>
           <p class="news">【限升十代新旗舰，实力输出，CPU性能提升约45%】一线品质板卡套装、全一线品牌！京东DIY行业机皇、销量20万台！升级产品加量不加价》
             <a href="javascript:;">查看></a>
@@ -177,7 +177,7 @@
               <div class="title">秒杀价:</div>
               <div class="price">
                 <strong>¥</strong>
-                <em>6697</em>
+                <em>{{detailInfo.price}}</em>
               </div>
               <div class="underlinePrice">[￥7299]</div>
               <div class="cutPrice">降价通知</div>
@@ -192,7 +192,7 @@
                 <div class="title">到手价:</div>
                 <div class="price">
                   <strong>¥</strong>
-                  <em>6097</em>
+                  <em>{{detailInfo.price}}</em>
                 </div>
               </div>
               <div class="promotion">促销满5000减600</div>
@@ -642,6 +642,7 @@
 <script>
 import Zoon from './Zoon/Zoon'
 import ImageList from './ImageList/imageList'
+import {mapState} from 'vuex'
 export default {
   name: "Detail",
   components:{
@@ -650,8 +651,14 @@ export default {
   },
   data(){
     return{
-      isShow:false
+      isShow:false,
+
     }
+  },
+  mounted(){
+    const skuId = this.$route.params.id
+    //console.log(skuId)
+    this.$store.dispatch('getDetailInfo',113)
   },
   methods:{
     //鼠标移入
@@ -664,8 +671,24 @@ export default {
     },
     //558
     toSuccessCart(){
-      this.$router.push('/cartsuccess')
+      /* const {imgUrl,title,price} = this.detailInfo
+      console.log(imgUrl,title,price)
+      const data ={
+        imgUrl,
+        title,
+        price
+      }
+      sessionStorage.setItem('detail',JSON.stringify(data)) */
+      const skuId = this.$route.params.id
+      // this.$router.push(`/cartsuccess/${skuId}`)
+      this.$router.push(`/cartsuccess/${113}`)
+      
     }
+  },
+  computed:{
+    ...mapState({
+      detailInfo:(state)=>state.detail.detailInfo
+    })
   }
 };
 </script>

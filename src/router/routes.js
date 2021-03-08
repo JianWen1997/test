@@ -2,7 +2,6 @@
 //import Home from '../pages/Home/Home.vue'
 const Home =()=>import ('../pages/Home/Home.vue')
 
-
 //引入Search
 //import Search from '../pages/Search/Search.vue'
 const Search =()=>import ('../pages/Search/Search.vue')
@@ -35,13 +34,13 @@ export default [
     /*3 path:'/search/:keyword?',
     name:'search', */
     //4path:'/search',
-    path: '/search/:keyword?', //?参数可传可不传
+    path: '/search', //?参数可传可不传
     name: 'search',
     component: Search,
   },
   //Detail路由
   {
-    path: '/detail',
+    path: '/detail/:id?',
     name: 'detail',
     component: Detail,
   },
@@ -79,7 +78,7 @@ export default [
   },
     // cartSuccess
     {
-      path:'/cartsuccess',
+      path:'/cartsuccess/:id?',
       name:'cartsuccess',
       component:CartSuccess
     },

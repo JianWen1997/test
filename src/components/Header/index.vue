@@ -144,7 +144,11 @@ export default {
   },
   methods:{
     toSearch(){
-      this.$router.push('/search')
+      if(this.keyword ==="空调"||this.keyword==="电视"){
+        this.$router.push(`/search?name=${this.keyword}`)
+      }
+      this.keyword=''
+      
     },
     toShopcart(){
       this.$router.push('/shopcart')

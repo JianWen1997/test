@@ -26,7 +26,11 @@ VueRouter.prototype.replace = function(location,onComplete=()=>{},onAbort){
 const router =  new VueRouter({
   mode:'history',//无#模式
   routes,
-
+    //设置滚动的位置
+  scrollBehavior () {
+    //设置初始位置
+    return { x: 0, y: 0 }
+  }
 })
 
 

@@ -2,7 +2,7 @@
     <div class="cartContiner">
         <div class="cart">
             <div class="cart-top">
-                <h4>全部商品 3</h4>
+                <h4>全部商品 {{totalNumber}}</h4>
                 <div>配送至：广东省深圳市宝安区</div>
             </div>
             
@@ -16,9 +16,9 @@
                     <div class="cart-co6">操作</div>
                 </div>
 
-                <div class="cartAll" v-for="(item,index) in shopCartList" :key="item.id">
+                <div class="cartAll" v-for="(item) in shopcartList" :key="item.id">
                     <div class="cart-inner"  >
-                        <input :checked="item.isChecked===1" type="checkbox" @click="changeChecked(item)">
+                        <input type="checkbox">
                         <div>
                             <a href="javascript:;">京东自营</a>
                         </div>
@@ -26,30 +26,30 @@
                     <div class="cart-body"> 
                       <ul class="cart-list">
                         <li class="cart-list-con1" >
-                            <input :checked="item.isChecked===1" type="checkbox" @click="changeChecked(item)" >
+                            <input type="checkbox" >
                         </li>
                         <li class="cart-list-con2">
-                            <img src="./images/fba5d381d687303d.jpg">
-                            <a class="item-msg" :title="item.name">{{item.name}}</a>
+                            <img :src="item.imgUrl">
+                            <a class="item-msg">{{item.title}}</a>
                         </li>
                         <li class="cart-list-con3">
                             <div class="item-txt">银黑 3.5</div>
                         </li>
                         <li class="cart-list-con4">
-                            <span class="price">￥{{item.Price}}</span>
+                            <span class="price">￥{{item.price}}</span>
                         </li>
                         <li class="cart-list-con5">
-                            <a href="javascript:;" class="mins" @click="updateNum(item.id,-1)">-</a>
+                            <a href="javascript:;" class="mins">-</a>
 
-                            <input autocomplete="off" type="text" value="1" minnum="1" class="itxt" @change="updateNum(item.id)" @input="validInput">
+                            <input autocomplete="off" type="text" :value="item.num" minnum="1" class="itxt">
 
-                            <a href="javascript:;" class="mins" @click="updateNum(item.id,+1)">+</a>
+                            <a href="javascript:;" class="mins">+</a>
                         </li>
                             <li class="cart-list-con6">
-                            <span class="sum">￥{{item.Price}}</span>
+                            <span class="sum" style="color:red;font-size:20px;">￥{{item.price}}</span>
                         </li>
                         <li class="cart-list-con7">
-                            <a href="javascript:;" class="sindelet" @click="deleteItem(index)">删除</a>
+                            <a href="javascript:;" class="sindelet" @click="deleteItem(item.id)">删除</a>
                             <br>
                             <a href="javascript:;">移入关注</a>
                         </li>
@@ -61,7 +61,7 @@
             <!-- 付款，结算 -->
             <div class="cart-tool">
                 <div class="tool-left">
-                    <div class="select-all" @click="isAllChecked">
+                    <div class="select-all">
                         <input class="chooseAll" type="checkbox">
                         <span>全选</span>
                     </div>
@@ -77,7 +77,7 @@
                         <span>3</span>件商品</div>
                     <div class="sumprice">
                         <em>总价 ：</em>
-                        <i class="summoney">￥999.99</i>
+                        <i class="summoney" style="font-size:22px">￥{{totalPrice}}</i>
                     </div>
                     <div class="sumbtn">
                         <a class="sum-btn" href="javascript:;">结算</a>
@@ -168,7 +168,7 @@
     </div>
 </template>
 <script>
-import {mapState} from 'vuex'
+import {mapState,mapGetters} from 'vuex'
 export default {
   name: "ShopCart",
   data(){
@@ -180,32 +180,21 @@ export default {
   // 计算属性
   computed:{
     ...mapState({
-      shopCartList:(state) => state.shopcart.shopCartList
-    })
+      shopcartList:(state) => state.shopcart.shopcartList
+    }),
+    ...mapGetters(['totalNumber','totalPrice']),
   },
 
   async mounted() {
     // mock购物车数据
-    this.$store.dispatch('shopCart')
-    // console.log(this.shopCartList)
-   
+    this.$store.dispatch('getShopCart')
+    
   },
 
   methods:{
-    // 是否选中
-    changeChecked(item){
-      const isChecked = item.isChecked
-      // console.log(isChecked)
 
-      if(isChecked === 1) {
-        item.isChecked = 0
-      }else if(isChecked === 0){
-        item.isChecked = 1
-      }
-    },
 
-    // 全选与不全选切换
-    isAllChecked(){},
+
 
     // 数量操作
     updateNum(){},
@@ -218,7 +207,7 @@ export default {
     },
 
     // 删除操作
-    deleteItem(index){
+    deleteItem(skuId){
       this.$confirm('您确定要删除此项吗?', '提示', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',
@@ -226,11 +215,13 @@ export default {
           center: true
         }).then(() => {
           // 删除
-          this.shops.splice(index,1)
-          this.$message({
-            type: 'success',
-            message: '删除成功!'
-          });
+          this.$store.dispatch('deleteCartItem',skuId)
+          .then(()=>{
+              this.$message.success('删除成功')
+            })
+            .catch((error)=>{
+              this.$message.error(error.message)
+            })
         }).catch(() => {
           this.$message({
             type: 'info',

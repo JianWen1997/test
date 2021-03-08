@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner :categoryList="categoryList" :bannerList="bannerList" />
+    <Banner :categoryList="categoryList" />
     <Brand />
     <Today />
     <Brand />
@@ -20,18 +20,15 @@ export default {
     Today,
     Foryou
   },
-      data(){
+  data(){
     return {
       categoryList:[],
-      bannerList:[]
     }
     
   },
   async mounted(){
-    
+    this.$store.dispatch('getBanners')
     const category = await this.$API.reqCategoryList()
-    
-
     this.categoryList = category.data
     //console.log(this.categoryList)
     

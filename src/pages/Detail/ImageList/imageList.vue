@@ -11,22 +11,22 @@
     }"
   >
     <swiper-slide>
-      <img src="../images/3.jpg" alt="" />
+      <img :src="detailInfo.imgUrl" alt="" />
     </swiper-slide>
     <swiper-slide>
-        <img src="../images/3.jpg" alt="" />
+        <img :src="detailInfo.imgUrl" alt="" />
     </swiper-slide>
     <swiper-slide>
-        <img src="../images/3.jpg" alt="" />
+        <img :src="detailInfo.imgUrl" alt="" />
     </swiper-slide>
     <swiper-slide>
-        <img src="../images/3.jpg" alt="" />
+        <img :src="detailInfo.imgUrl" alt="" />
     </swiper-slide>
     <swiper-slide>
-        <img src="../images/3.jpg" alt="" />
+        <img :src="detailInfo.imgUrl" alt="" />
     </swiper-slide>
     <swiper-slide>
-        <img src="../images/3.jpg" alt="" />
+        <img :src="detailInfo.imgUrl" alt="" />
     </swiper-slide>
     <swiper-slide>
         <img src="../images/3.jpg" alt="" />
@@ -38,6 +38,7 @@
 <script>
 export default {
   name: "ImageList",
+  props:['detailInfo'],
   data() {
     return {
       currentIndex:0

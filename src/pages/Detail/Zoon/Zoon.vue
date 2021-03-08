@@ -1,9 +1,9 @@
 <template>
   <div class="spec-preview">
-    <img src="../images/3.jpg" />
+    <img :src="detailInfo.imgUrl" />
     <div class="event" ref="event" @mousemove="handlerMove"></div>
     <div class="big">
-      <img src="../images/3.jpg" ref="bigImg"/>
+      <img :src="detailInfo.imgUrl" ref="bigImg"/>
     </div>
     <div class="mask" ref="mask"></div>
   </div>
@@ -13,7 +13,8 @@ export default {
   name: "Zoon",
   props: {
     smallImg: String, 
-    bigImg: String, 
+    bigImg: String,
+    detailInfo:Object 
   },
   mounted() {
     // 遮挡层的宽度

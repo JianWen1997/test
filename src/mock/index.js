@@ -4,13 +4,13 @@ import Mock from 'mockjs'
 import category from './category.json'
 //引入user用户数据
 import user from './user.json'
-import banner from './banner.json'
+
 
 
 // 生成随机的数据
 Mock.mock('/mock/category',{code:200,data:category})
 Mock.mock('/mock/user',{code:200,data:user})
-Mock.mock('/mock/banner',{code:200,data:banner})
+
 
 
 // console.log('执行了mock')

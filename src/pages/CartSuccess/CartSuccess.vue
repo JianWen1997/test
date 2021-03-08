@@ -10,17 +10,17 @@
                     </div>
                     <div class="inner">
                         <div>
-                            <img class="s-img" src="./images/f59ecd1f61c69b7b.jpg" alt="">
+                            <img class="s-img" :src="detailInfo.imgUrl" alt="">
                         </div>
                         <div class="s-right">
                             <div>
                                 <!-- <a href="javescript:;" class="shop-content">小米耳机 圈铁Pro 入耳式有线耳机音乐耳机手机耳机耳麦</a> -->
-                                <router-link class="shop-content" to="/detail">小米耳机 圈铁Pro 入耳式有线耳机音乐耳机手机耳机耳麦</router-link>
+                                <router-link class="shop-content" to="/detail">{{detailInfo.title}}</router-link>
                             </div>
                             <div>
                                 <span class="txt">颜色：银黑</span>
                                 <span class="txt">尺码：3.5mm</span>
-                                <span class="txt">/  数量：1</span>
+                                <span class="txt">价钱:<span style="color:red;font-size:18px">{{detailInfo.price}}</span></span>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                                 <div class="inner-pre">
                                     <strong>￥139.00</strong>
                                 </div>
-                                <div class="inner-add" @click="addCart">
+                                <div class="inner-add">
                                     <a href="javascrip:;">加入购物车</a>
                                 </div>
 
@@ -359,28 +359,40 @@
 </template>
 
 <script>
-
+import {mapState} from 'vuex'
 export default {
     name:'cartSuccess',
-
     data() {
         return {
-            
         }
+    },
+    computed:{
+      ...mapState({
+        detailInfo:(state)=>state.detail.detailInfo
+      })
+    },
+    mounted(){
+      /* const detail = sessionStorage.getItem('detail')
+      this.detail = JSON.parse(detail) */
+      const skuId = this.$route.params.id
+      this.$store.dispatch('getDetailInfo',skuId)
+      
     },
     methods:{
         // 去购物车结算
         toCart(){
+          const data ={
+            num:1,
+            idChecked:0,
+            price:this.detailInfo.price,
+            title:this.detailInfo.title,
+            imgUrl:this.detailInfo.imgUrl,
+            id:this.detailInfo.id
+          }
+          this.$store.dispatch('addShop',data).then(()=>{
             this.$router.replace('/shopcart')
+          })
         },
-
-        // 加入购物车
-        addCart(){
-            // const skuId = this.$route.params.skuId
-
-        },
-
-        
     }
 }
 </script>

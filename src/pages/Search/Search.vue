@@ -922,7 +922,7 @@ export default {
 
   methods:{
     toDetail(){
-      this.$router.push('/detail')
+      this.$router.push('/detail/1')
     }
   }
 }

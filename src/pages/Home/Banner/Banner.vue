@@ -37,21 +37,10 @@
               
             }"
           >
-            <swiper-slide class="swiper-slide">
-              <img src='./images/03.png' style="width:590px;height:460px;" alt="" />
+            <swiper-slide class="swiper-slide" v-for="item in bannerList" :key="item">
+              <img v-lazy='item' style="width:590px;height:460px;" alt="" />
             </swiper-slide>
-            <swiper-slide class="swiper-slide">
-              <img src="./images/04.png" style="width:590px;height:460px;" alt="" />
-            </swiper-slide>
-            <swiper-slide class="swiper-slide">
-              <img src="./images/05.png" style="width:590px;height:460px;" alt="" />
-            </swiper-slide>
-            <swiper-slide class="swiper-slide">
-              <img src="./images/06.png" style="width:590px;height:460px;" alt="" />
-            </swiper-slide>
-            <swiper-slide class="swiper-slide">
-              <img src="./images/07.png" style="width:590px;height:460px;" alt="" />
-            </swiper-slide>
+            
            
             <div class="swiper-button-prev" slot="button-prev"></div>
             <div class="swiper-button-next" slot="button-next"></div>
@@ -141,14 +130,20 @@
 <script>
 // 引入lodash库,按需引入
 import throttle from 'lodash/throttle'
+import {mapState} from 'vuex'
 export default {
   name: "Home",
   props:['categoryList'],
   data(){
     return{
       currentIndex:-2,
-      bannerList:[]
+      
     }
+  },
+  computed:{
+    ...mapState({
+      bannerList:state=>state.home.bannerList
+    })
   },
 /*   async mounted(){
 
