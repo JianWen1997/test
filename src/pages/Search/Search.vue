@@ -16,9 +16,10 @@
           </div>
           <div class="attrValue">
             <ul class="trademarkContainer">
-              <li class="trademarkImg" v-for="item in attr1.attrList" :key="item.id">
-                <a href="javascript:;">
-                  <img :src="item.imgUrl" alt="" :title="item.tmName">
+              <li class="trademarkImg" v-for="(item, index) in attr1.attrList" :key="item.id">
+                <a href="javascript:;" :title="item.tmName" @mouseenter="handleTmTxt(index)" @mouseleave="handleTmImg">
+                  <img :src="item.imgUrl" alt="" v-if="tmIndex !== index && item.imgUrl">
+                  <em v-else>{{item.tmName}}</em>
                 </a>
               </li>
             </ul>
@@ -152,7 +153,7 @@
             <span></span>
           </div>
           <div class="advertising" v-for="(item, index) in advertising" :key="index">
-            <img :src="item.imgUrl" alt="" @click="goDetail(item.id)">
+            <img v-lazy="item.imgUrl" alt="" @click="goDetail(item.id)">
             <p class="price">
               <span>￥{{item.price}}</span>
             </p>
@@ -271,7 +272,7 @@
               <li v-for="(item,index) in productList" :key="index">
                 <div class="goodsWrap">
                   <div class="img">
-                    <img :src="item.imgUrl" alt="" @click="goDetail(item.id)">
+                    <img v-lazy="item.imgUrl" alt="" @click="goDetail(item.id)">
                   </div>
                   <div class="price">
                     <em>￥</em>
@@ -310,6 +311,7 @@ export default {
   name: "Search",
   data() {
     return {
+      tmIndex: null
     }
   },
   computed: {
@@ -326,11 +328,18 @@ export default {
   },
   mounted() {
     const {name} = this.$route.query
+    //console.log(name)
     this.$store.dispatch('getSearchData', name)
   },
   methods:{
     goDetail(id) {
       this.$router.push(`/detail/${id}`)
+    },
+    handleTmTxt(index) {
+      this.tmIndex = index
+    },
+    handleTmImg() {
+      this.tmIndex = null
     }
   }
 }
@@ -390,10 +399,25 @@ export default {
               border 1px solid #ddd
               margin-top -1px
               margin-left -1px
+              // box-sizing border-box
+              &:hover
+                border-color #e4393c
+                position relative
+                a
+                  border-color #e4393c
+              a
+                display flex
+                width 102px
+                height 36px
+                justify-content center
+                align-items center
+                white-space nowrap
+                font 12px tahoma
+                padding 5px 6px
+                border 1px solid #fff
             img
               width 102px
               height 36px
-              margin 5px 6px
           .categoryContainer
             display flex
             .categoryList
@@ -724,4 +748,4 @@ export default {
                       height 18px
                       top 3px
                       left 3px
-</style>
+</style>n
