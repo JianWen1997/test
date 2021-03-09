@@ -146,6 +146,8 @@ export default {
     toSearch(){
       if(this.keyword ==="空调"||this.keyword==="电视"){
         this.$router.push(`/search?name=${this.keyword}`)
+      }else{
+        this.$router.push(`/search?name=电视`)
       }
       this.keyword=''
       
